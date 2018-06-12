@@ -1,0 +1,90 @@
+ <!DOCTYPE html>
+<html lang="en">
+   <head>
+            <title> Weather </title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+     <meta http-equiv="Content-Type" content="text/html: charset=UTF-8">
+        
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+ <script>
+    $(document).ready(function(){
+      $("a.atag").hover(function(){
+        $(this).css("font-size","150%");
+      }, function(){
+      $(this).css("font-size","100%");
+      });
+    });
+  </script>
+      <style>
+        html{
+            font-family: "Avenir Next", Helevetica, sans-serif;
+            text-align: center;
+        }
+        body{
+            margin: 0 auto;
+            background-color: powderblue;
+        } 
+        h1, h2 {
+            margin-top: 100px;
+  font-weight: 300;
+        }
+        footer{
+  padding: 10px ;
+  background-color: #101010;
+  color:#9d9d9d;
+  bottom: 0;
+  position: fixed;
+  }
+  .footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: black;
+   color: white;
+   text-align: center;
+}
+  
+      </style>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+   </head>
+   <body>
+       <nav class="navbar navbar-inverse navbar-fixed-top">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+                            <a href="front.jsp" class="navbar-brand"><img src="image/farmcraftlogo.jpg" style="width: 20px; margin-right: 8px; float: left;"><p style="float: left;">FarmCraft</p></a>
+			</div>
+			<div class="collapse navbar-collapse" id="myNavbar">
+				<ul class="nav navbar-nav navbar-right">
+                                     <li><a href="cart.jsp" class="atag"><span class="glyphicon glyphicon-shopping-cart"></span> Cart</a></li>
+            <li><a href="setting.jsp" class="atag"><span class="glyphicon glyphicon-cog"></span> Setting</a></li>
+            <li><a href="logout.jsp" class="atag"><span class="glyphicon glyphicon-log-in"></span> Logout</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+      
+      <h1><div id="temp"></div><div id="minutely"></div></h1>
+      <h2><div id="location"></div></h2><br><br><br>
+      <h3><a href="front1.jsp">Click here </a>to go back to the front page</h3>
+       
+      <footer>
+  <div class="footer">
+    <center>
+      Copyright © FarmCraft. All Rights Reserved | Contact Us: +91 90000 00000
+    </center>
+  </div>
+</footer>
+         </body>
+   <script src="app.js"></script>
+   
+</html> 
